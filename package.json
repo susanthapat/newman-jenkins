@@ -6,7 +6,7 @@
     "test": "test"
   },
   "scripts": {
-    "api-test-production": "newman run test/mycollection1.postman_collection.jason"
+"api-test-production": "newman run test/mycollection1.postman_collection.json"
   },
   "author": "susantha pathirana",
   "dependencies": {
