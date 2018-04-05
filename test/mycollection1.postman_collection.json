@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "0cd73446-8216-4159-af0c-79ebbd4e2314",
+		"name": "mycollection1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "request1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "5a0986be-d903-498a-b13b-5cb2696cf707",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": "https://jsonplaceholder.typicode.com/posts/"
+			},
+			"response": []
+		}
+	]
+}
